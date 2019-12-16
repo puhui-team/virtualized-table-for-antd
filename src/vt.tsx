@@ -326,6 +326,7 @@ function add_h(ctx: VT_CONTEXT, idx: number, h: number): void {
 function free_h(ctx: VT_CONTEXT, idx: number): void {
   console.assert(ctx.row_height[idx] !== void 0, `failed to free this tr[${idx}].`);
   ctx.computed_h -= ctx.row_height[idx];
+  ctx.computed_h = Math.max(0, ctx.computed_h);
   if (ctx.debug) console.info("free", idx, ctx.row_height[idx]);
 }
 
