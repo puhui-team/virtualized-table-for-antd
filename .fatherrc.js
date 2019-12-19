@@ -5,6 +5,6 @@ export default {
         importLibToEs: true
     },
     preCommit: {
-      eslint: true,
+      eslint: false,
     },
 };
