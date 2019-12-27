@@ -369,6 +369,7 @@ function scroll_to(ctx: VT_CONTEXT, top: number, left: number): void {
 
 
 function add_h(ctx: VT_CONTEXT, idx: number, h: number, identity: "dom" | "shadow"): void {
+  if (idx >= ctx.row_count) return; // TODO: 分页事件触发onScroll时，如果tail大于新页面总数，就会导致大量shadow添加，引起新页面底部大量空白，且无法恢复。
   console.assert(h !== void 0, `failed to apply height with index ${idx}!`);
   ctx.row_height[idx] = h;
   ctx.computed_h += h; // just do add up.
