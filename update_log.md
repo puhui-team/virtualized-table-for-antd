@@ -1,3 +1,34 @@
+## 0.7.8(zh)
+  1. fix: 删除被标记为`deprecated`的接口和参数。
+      + 接口：`getVTComponents`
+      + 接口：`getVTContext`
+      + 参数：`vt_opts.reflection`
+  1. refacotry: 一些细小重构。
+
+
+## 0.7.8(en)
+  1. fix: delete the APIs and the params marked as `deprecated`.
+      + API：`getVTComponents`
+      + API：`getVTContext`
+      + param：`vt_opts.reflection`
+  1. refacotry: some minor refactorings.
+
+
+## 0.7.7
+  1. fix: `Cannot redefine property: __DIAGNOSIS__`(#55).
+
+## 0.7.6
+  1. fix: ctx._React_ptr.forceUpdate is not a function.(#46)
+
+
+## 0.7.5
+  1. improved diff algorithm, fix some bugs.
+
+
+## 0.7.4
+  1. improved diff algorithm.
+
+
 ## 0.7.3
   1. fix a bug.(#42)
 
